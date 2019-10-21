@@ -4,7 +4,173 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<style>
+		/*------------------------------------------
+------------ Общие стили -------------------
+----------------------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Lato, sans-serif;
+}
+
+h1,h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	width: 0;
+	height: 0;
+	display: block;
+	position: relative;
+	clear: both;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.orange {
+	color: #f7600e;
+}
+
+.content-wrapper {
+	width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*------------------------------------------
+------------ Общие стили -------------------
+----------------------------------------*/
+
+
+/*------------------------------------------
+------------ HOVER EFFECTS -------------------
+----------------------------------------*/
+.logo:hover {
+	color: #f7600e;
+}
+
+.header-btn a:hover {
+	background: #f7600e;
+	border-color: #f7600e;
+	color: #f7f1e3;
+}
+
+.main-nav a:hover {
+	color: #f7600e;
+}
+
+.header-span:hover {
+	color: #fff;
+}
+
+
+/*------------------------------------------
+------------ HOVER EFFECTS -------------------
+----------------------------------------*/
+
+
+
+
+.header-section {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../header-image.jpg') no-repeat center;
+	background-size: cover;
+	background-color: grey;
+	min-height: 100vh;
+}
+
+.header-section>.flex {
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header-section>.content-wrapper {
+	min-height: inherit;
+}
+
+.header {
+	margin-top: 20px;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.logo {
+	transition: .2s all;
+}
+
+.header a{
+	font-size: 28px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+}
+
+.header-span {
+	margin-left: 5px;
+	font-size: 28px;
+	font-weight: 600;
+	color: #f7600e;
+	transition: .2s all;
+}
+
+.main-nav a{
+	font-size: 16px;
+	margin-left: 15px;
+	padding-bottom: 7px;
+	transition: .2s linear all;
+}
+
+.header-text-block {
+	text-align: center;
+	color: #fff;
+}
+
+.main-title {
+	color: #fff;
+	font-size: 65px;
+	font-weight: 800;
+	letter-spacing: 4px;
+}
+
+.header-paragraph {
+	padding: 10px 0 30px;
+	line-height: 27px;
+}
+
+.header-btn {
+	/*margin-left: -30px;*/
+}
+
+.header-btn a {
+	padding: 10px 0;
+	display: inline-block;
+	min-width: 210px;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 2px solid white;
+	color: #fff;
+	text-transform: uppercase;
+	transition: .2s linear all;
+}
+
+.second-btn {
+	margin-left: 10px;
+}
+
+.header-arrow {
+	text-align: center;
+	margin-bottom: 7px;
+}
+
+.header-arrow a {
+	color: #fff;
+	font-size: 30px;
+}
+	</style>
 </head>
 <body>
 	<!-- Header -->
